@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="index_style.css">
+    
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="Thee Thalapathy.mp3" type="audio/mpeg">  
+      </audio>
+    <div class="container" id="user_input">
+        <h3>TIMER</h3>
+        <div class="head">
+            <div class="input">
+                <input type="number" placeholder="Hour" id="h" value=00>
+                <p>Hours</p>
+            </div>
+            <div class="input">
+                <h2>:</h2>
+                
+            </div>
+            <div class="input">
+                <input type="number" placeholder="Minute" id="m" value=00>
+                <p>Minutes</p>
+            </div>
+            <div class="input">
+                <h2>:</h2>
+                
+            </div>
+            <div class="input">
+                <input type="number" placeholder="Second" id="s" value=00>
+                <p>Seconds</p>
+            </div>
+        </div>
+       
+        <button onclick="start()">Start</button>
+        
+    </div>
+
+    <div class="container" id="timer">
+
+        <div class="counter">
+          
+            <div class="box">
+                <h2 class="hours">00</h2>
+            </div>
+            <div class="box">
+                <h2>:</h2>
+                <p>&nbsp;</p>
+            </div>
+            <div class="box">
+                <h2 class="minutes">00</h2>
+            </div>
+            <div class="box">
+                <h2>:</h2>
+                <p>&nbsp;</p>
+            </div>
+            <div class="box">
+                <h2 class="seconds">00</h2>   
+            </div>
+        </div>
+         <div class="btn">
+        <a href="index.html"><button >Restart</button></a>
+        <button onclick="stop()">Stop</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
